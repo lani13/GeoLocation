@@ -39,7 +39,7 @@ public class PointDataSource{
     }
 
     public void open(){
-        //db = helper.getWritableDatabase();
+
         db = SQLiteDatabase.openOrCreateDatabase(context.getExternalFilesDir(null)+ "/" + DATABASE_NAME, null);
         db.execSQL(CREATE_TABLE);
         Log.i("Mappoint","open " + context.getExternalFilesDir(null));
@@ -47,7 +47,7 @@ public class PointDataSource{
 
     public void close() {
         db.close();
-        //helper.close();
+
     }
 
     private void clearPointsTable() {
