@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+    <ImageButton
+            android:id="@+id/button_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="67dp"
+            android:src="@drawable/polygonpoints" />
+
+    <ImageButton
+            android:id="@+id/button_location_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="66dp"
+            android:layout_toRightOf="@+id/button_map"
+            android:src="@drawable/mappoint" />
+
+    <Button
+            android:id="@+id/button_register"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/button_map"
+            android:layout_below="@+id/button_map"
+            android:layout_marginTop="66dp"
+            android:text="Register" />
+
+
+</RelativeLayout>
+
